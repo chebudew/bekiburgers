@@ -108,7 +108,7 @@ main .wrapper{
     border-radius: 1rem;
     max-width: 800px;
     height: auto;
-   backdrop-filter: blur(15px); 
+   backdrop-filter: blur(10px); 
 }
 @media screen and  (min-width:805px) {
      nav {
