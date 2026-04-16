@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background:url('file_00000000bdc871f7aa3c0e97354e3d80.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 70px;
+    min-height: 30px;
+    background-color: orangered;
+}
+nav a {
+    text-decoration: none;
+    color: white; 
+     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     letter-spacing: 1px;
+}
+nav a:hover {
+    transform: scale(1.1);
+    transition: all 2sec ease;
+    cursor: pointer;
+}
+nav img {
+    height: 50px;
+    width: auto;
+}
+.account {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.account a{
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    place-items:center ;
+    height: 60px;
+    width: 210px;
+}
+.account a:first-child{
+    color: white;
+}
+.account a:last-child{
+    color: black;
+    border-radius: 1.5rem;
+    background-color: gray;
+    box-shadow: 3px 3px 10px black;
+    transform: scale(0.8);
+}
+.input-box {
+    margin-top: 2rem;
+}
+.input-box,.signup-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-box input {
+    color: white;
+    font-size: 1rem;
+}.input-box input::placeholder {
+    color: rgba(255,255,255,0.7);
+    opacity: 1;
+}
+.input-box input,.signup-btn button {
+    margin: 0.75rem;
+    height: 50px;
+    width: 350px;
+}
+.remember {
+display: flex;
+justify-content: space-around;
+align-items: center;
+    
+}
+.remember input {
+    accent-color: white;
+    
+}
+.remember a {
+    color: orange;
+    text-decoration: none;
+}
+.input-box input{
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.521);
+    background-color: transparent;
+    padding: 8px;
+}
+.signup-btn button{
+    margin-top: 4rem;
+    color: white;
+    background-color: black;
+}
+.wrapper {
+    width: calc(100%-40px);
+    margin: 100px auto;
+    backdrop-filter: blur(15px);
+    max-width: 425px;
+    height: 425px;
+}
+@media screen and (max-width:425px) {
+    .wrapper {
+        margin: 100px 0.75rem 0 0.75rem;
+    }
+}
